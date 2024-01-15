@@ -8,7 +8,7 @@
 <br>
 <ul style="list-style-type:disc">
 <li><b>SQL</b> (for analysis)</li>
-  SQL Skills Used: Common Table Expressions, Subqueries, Joins, Views, Aggregate Functions, Scalar Functions, Date and Time Functions, Conditional Functions, Conversion Functions
+  SQL Skills Used: Common Table Expressions, Subqueries, Joins, Views, Aggregate Functions, Scalar Functions, Date and Time Functions, Conditional Functions, Conversion Functions, Analytical Functions
 <li><b>Power BI</b> (for data visualization)</li>
 </ul>
 <h3>Detailed Explanation</h3>
