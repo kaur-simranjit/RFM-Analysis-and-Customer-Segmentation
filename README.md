@@ -139,7 +139,7 @@ POWER BI is used for visualization of the above insights:
 <br>
 <br>
 
-![eda_dashboard](https://github.com/kaur-simranjit/RFM-Analysis-and-Customer-Segmentation/assets/109523596/c421b971-cc99-46bc-8025-eee6ad823c6c)
+![eda_dashboard](https://github.com/kaur-simranjit/RFM-Analysis-and-Customer-Segmentation/assets/109523596/4d3c0c58-b8d4-4337-9b51-ba8f205e278d)
 <h5>Step 5: RFM Analysis and Customer Segmentation</h5>
 <p>Here, we will first calculate recency, frequency, and monetary values, and assign scores. Then, segment the customers based on RFM scores.</p>
 <h6>RFM Values and Scores Calculation</h6>
