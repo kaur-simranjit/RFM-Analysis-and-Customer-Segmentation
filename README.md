@@ -14,7 +14,7 @@
 <h3>Detailed Explanation</h3>
 <h5>Step 1: Choose a Dataset</h5>
 <p>To perform RFM Analysis and Customer Segmentation, we need a dataset that includes customer id, transaction date, and transaction amount.</p>
-Dataset: https://www.kaggle.com/datasets/harshsingh2209/rfm-analysis
+Dataset: https://statso.io/rfm-analysis-case-study/
 <h5>Step 2: Import the Data</h5>
 The data is loaded into the MySQL database. 
 <br>
@@ -134,12 +134,7 @@ There are no null values in the data.
 <br>
 <br>
 ![27](https://github.com/kaur-simranjit/RFM-Analysis-and-Customer-Segmentation/assets/109523596/694abe20-7f65-4ef4-91b9-75009f46628b)
-<h5>Data Visualization</h5>
-POWER BI is used for visualization of the above insights:
-<br>
-<br>
 
-![eda_dashboard](https://github.com/kaur-simranjit/RFM-Analysis-and-Customer-Segmentation/assets/109523596/4d3c0c58-b8d4-4337-9b51-ba8f205e278d)
 <h5>Step 5: RFM Analysis and Customer Segmentation</h5>
 <p>Here, we will first calculate recency, frequency, and monetary values, and assign scores. Then, segment the customers based on RFM scores.</p>
 <h6>RFM Values and Scores Calculation</h6>
