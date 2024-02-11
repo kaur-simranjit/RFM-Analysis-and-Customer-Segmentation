@@ -2,7 +2,7 @@
 <p>RFM stands for recency, frequency, and monetary value and it is a data driven customer behavior segmentation technique. The idea is to segment customers based on when their last purchase was (recency), how often they’ve purchased in the past (frequency), and how much they’ve spent overall (monetary value).</p>
 <p>~ definition by blog.rsquaredacademy.com</p>
 <p>By using this technique, we can target customers better which will help in number of things such as increase in customer retention which further increase company’s revenue, improve marketing strategies by focusing on specific customer segment, and reduce churn rate.</p>
-<h3>Tools Used</h3>
+<h3>Tech Used</h3>
 
 ![logo](https://github.com/kaur-simranjit/RFM-Analysis-and-Customer-Segmentation/assets/109523596/9545a44f-d7cd-427b-ae34-7764624f1adc)
 <br>
