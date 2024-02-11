@@ -230,3 +230,7 @@ POWER BI is used for visualization of the above insights:
 <li>Loyal Customers: We can create a loyalty program for them to maintain their relationship with the company in which if they earn certain points, they can get a discount on number of products.</li>
 <li>Regular Customers: We can do occasional promotions to encourage repeat business.</li>
 </ul>
+
+<h5>References</h5>
+https://github.com/AyushiAsthana18/RFM-Analysis
+
