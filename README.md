@@ -232,5 +232,6 @@ POWER BI is used for visualization of the above insights:
 </ul>
 
 <h5>References</h5>
-https://github.com/AyushiAsthana18/RFM-Analysis
+<ul style="list-style-type:disc">
+<li>https://github.com/AyushiAsthana18/RFM-Analysis</li></ul>
 
