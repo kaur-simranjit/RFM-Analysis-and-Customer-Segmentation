@@ -1,6 +1,5 @@
 # RFM Analysis and Customer Segmentation Using SQL and Power BI
-<p>RFM stands for recency, frequency, and monetary value and it is a data driven customer behavior segmentation technique. The idea is to segment customers based on when their last purchase was (recency), how often they’ve purchased in the past (frequency), and how much they’ve spent overall (monetary value).</p>
-<p>~ definition by blog.rsquaredacademy.com</p>
+<p>RFM stands for recency, frequency, and monetary value and it is a data driven customer behavior segmentation technique. The idea is to segment customers based on when their last purchase was (recency), how often they’ve purchased in the past (frequency), and how much they’ve spent overall (monetary value).  ~ definition by blog.rsquaredacademy.com</p>
 <p>By using this technique, we can target customers better which will help in number of things such as increase in customer retention which further increase company’s revenue, improve marketing strategies by focusing on specific customer segment, and reduce churn rate.</p>
 <h3>Tech Used</h3>
 
