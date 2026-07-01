@@ -159,11 +159,9 @@ Average recency, frequency, and monetary scores were compared across customer se
 
 <img width="770" height="212" alt="Screenshot 2026-07-01 at 7 23 10 PM" src="https://github.com/user-attachments/assets/30f0f1fc-c758-4582-a4a7-e93a05d03524" />
 
-##### Step 11: Power BI Dashboard
+### Power BI Dashboard
 
-
-
-
+<img width="1069" height="726" alt="Screenshot 2026-07-01 at 7 37 55 PM" src="https://github.com/user-attachments/assets/ccfb1e96-bf7a-4489-8552-bf1d439bc5f5" />
 
 
 
