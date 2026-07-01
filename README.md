@@ -11,5 +11,5 @@ By using this technique, we can target customers better which will help in numbe
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 
 - **SQL** (for analysis)
-  SQL Skills Used: Window Functions - Analytical Functions, Common Table Expressions, Subqueries, Joins, Views, Aggregate Functions, String Functions, Scalar Functions, Date and Time Functions, Conditional Functions, Conversion Functions
+- SQL Skills Used: Window Functions - Analytical Functions, Common Table Expressions, Subqueries, Joins, Views, Aggregate Functions, String Functions, Scalar Functions, Date and Time Functions, Conditional Functions, Conversion Functions
 - **Power BI** (for data visualization)
