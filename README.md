@@ -25,18 +25,12 @@ Dataset: https://statso.io/rfm-analysis-case-study/
 **Note:** The dataset choosen for this project is public, however it is no longer available in the original source.
 
 ##### Step 2: Import the Data
-
-<img width="491" height="178" alt="Screenshot 2026-07-01 at 7 05 44 PM" src="https://github.com/user-attachments/assets/aa16fcda-1b5f-49bc-bd01-80cbb7148134" />
-
 The data is loaded into the MySQL database (projects).
 Viewing first 10 rows of the table:
 
 <img width="923" height="361" alt="Screenshot 2026-07-01 at 6 46 57 PM" src="https://github.com/user-attachments/assets/3ca12290-30f0-466d-b60a-d3091eb9e7ec" />
 
 ##### Step 3: Clean the Data
-
-<img width="789" height="344" alt="Screenshot 2026-07-01 at 7 06 36 PM" src="https://github.com/user-attachments/assets/204ca6ce-f5c7-497e-ac1b-e41575b626ed" />
-
 The datatype of column "PurchaseDate" is changed from "TEXT" to "DATE", and the datatype of column "TransactionAmount" is changed to "DECIMAL" for exact numeric representation.
 Datatype changes were verified using INFORMATION_SCHEMA.COLUMNS.
 
@@ -48,24 +42,16 @@ Datatype changes were verified using INFORMATION_SCHEMA.COLUMNS.
 
 ###### Number of rows and columns
 
-<img width="300" height="113" alt="Screenshot 2026-07-01 at 7 07 51 PM" src="https://github.com/user-attachments/assets/e10d735a-14ac-42ee-9071-15766c759211" />
-
 <img width="300" height="113" alt="Screenshot 2026-07-01 at 6 51 08 PM" src="https://github.com/user-attachments/assets/e805009d-cedc-41b8-8fcc-9657db3bb285" />
 
 <img width="300" height="113" alt="Screenshot 2026-07-01 at 6 51 46 PM" src="https://github.com/user-attachments/assets/3541706c-9b6c-45d1-96a6-ac7871d5e21d" />
 
 ###### Checking for unique values
-
-<img width="680" height="87" alt="Screenshot 2026-07-01 at 7 08 38 PM" src="https://github.com/user-attachments/assets/784b2348-6926-4fd7-85a7-42d0bd1a8bb0" />
-
 OrderId was checked to confirm it is unique across the dataset.
 
 <img width="469" height="100" alt="Screenshot 2026-07-01 at 6 52 02 PM" src="https://github.com/user-attachments/assets/300c0390-d3c9-41ea-9f7d-82e63c62980c" />
 
 ###### Identifying null values
-
-<img width="304" height="80" alt="Screenshot 2026-07-01 at 7 09 13 PM" src="https://github.com/user-attachments/assets/5fa1ec4e-9763-4504-b67a-42952690df61" />
-
 Checked for null values in the Location column.
 
 <img width="947" height="119" alt="Screenshot 2026-07-01 at 6 52 32 PM" src="https://github.com/user-attachments/assets/4b104e8b-fdcf-4eab-8d65-5cb4e566bd6d" />
@@ -106,24 +92,21 @@ There are no null values in the data.
 
 <img width="425" height="428" alt="Screenshot 2026-07-01 at 7 00 16 PM" src="https://github.com/user-attachments/assets/f5018632-3410-4718-a5e7-fac34ff3474a" />
 
-##### Step 5: Prepare Data for RFM Analysis
+##### Step 5: RFM Analysis
 Only the columns needed for analysis (customer_id, order_id, purchase_date, amount) were selected into a new table, order_data, with purchase_date and amount converted to DATE and DECIMAL respectively.
 
-<img width="843" height="272" alt="Screenshot 2026-07-01 at 7 13 02 PM" src="https://github.com/user-attachments/assets/970728ee-846a-41e2-9fd0-269bee3d4333" />
-
-##### Step 6: Calculate RFM Values and Scores
 Using a Common Table Expression (CTE) and SQL window functions, Recency, Frequency, and Monetary values were calculated per customer, then scored on a scale of 1–3 using NTILE(). Scores were combined into an RFM code and averaged to produce an overall avg_rfm_score, stored as the view rfm_analysis.
 
 <img width="1100" height="312" alt="Screenshot 2026-07-01 at 7 15 03 PM" src="https://github.com/user-attachments/assets/fd06f481-ebd0-463d-916f-697343f50c7a" />
 
 <img width="1100" height="150" alt="Screenshot 2026-07-01 at 7 15 54 PM" src="https://github.com/user-attachments/assets/81fa9921-b7bc-471a-a85a-9797918948ba" />
 
-##### Step 7: Value and Customer Segmentation
+##### Step 6: Value and Customer Segmentation
 Using the rfm_analysis view, customers were classified into value segments (High, Mid, Low) based on avg_rfm_score, and further into customer segments (Champion, Loyal, Regular, At-risk, Lost) based on their specific RFM code — stored as the view customer_segmentation.
 
 <img width="1423" height="430" alt="Screenshot 2026-07-01 at 7 17 56 PM" src="https://github.com/user-attachments/assets/0d187c0c-3760-4574-8ed6-b9e50485484d" />
 
-##### Step 8: Segment Distribution
+##### Step 7: Segment Distribution
 
 <img width="439" height="171" alt="Screenshot 2026-07-01 at 7 18 44 PM" src="https://github.com/user-attachments/assets/6bfe7dbb-1b1f-44a5-b8fc-1374f4bce727" />
 
@@ -144,7 +127,7 @@ We have highest regular customers.
 - 52% of low value segment customers are the at-risk customers.
 - 59% of mid value segment customers are the regular customers.
 
-##### Step 9: Revenue and Recency by Segment
+##### Step 8: Revenue and Recency by Segment
 
 <img width="598" height="228" alt="Screenshot 2026-07-01 at 7 22 07 PM" src="https://github.com/user-attachments/assets/3126332b-9513-4016-a01c-2c7dce575d09" />
 
@@ -154,7 +137,7 @@ We have highest regular customers.
 
 **At-risk Customers** (210) show the second-highest recency gap at approximately 49.6 days since last purchase, representing $142.8K (27.8%) of revenue — a clear retention priority.
 
-##### Step 10: Segment Comparison by RFM Score
+##### Step 9: Segment Comparison by RFM Score
 Average recency, frequency, and monetary scores were compared across customer segments to validate segment behavior patterns.
 
 <img width="770" height="212" alt="Screenshot 2026-07-01 at 7 23 10 PM" src="https://github.com/user-attachments/assets/30f0f1fc-c758-4582-a4a7-e93a05d03524" />
